@@ -13,21 +13,30 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <style>
+    .checked{
+      color: gold;
+    }
+  </style>
+
 	<title>Home</title>
 </head>
 
 <body>
 <div class="container-fluid">
   <!--main navigation-->
+  <div class="topnav">
     <nav class="navbar navbar-expand-sm">
-  		<ul class="navbar-nav">
-        <li class="nav-home" style="font-family: pacifico; font-size: 24px;">
+  		<ul class="nav navbar-nav">
+        <li class="nav-home" style="font-family: pacifico; font-size: 24px; color: #9c33ff;">
           <a class="nav-link" href="home.html">Holiday</a>
+        </li>
     		<li class="nav-browse">
       			<a class="nav-link" href="browse.html">Browse</a>
     		</li>
     		<li class="nav-likes">
-      			<a class="nav-link" href="likes.html">Likes</a>
+      			<a class="nav-link" href="likes.html">Requests</a>
     		</li>
    			<li class="nav-matches">
       			<a class="nav-link" href="matches.html">Matches</a>
@@ -37,11 +46,19 @@
         <input class="form-control mr-sm-2" type="text" placeholder="Search">
         <button class="btn btn-primary" type="submit">Search</button>
     </form>
-    <br>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-signup">
+            <a class="nav-link" href="#">Sign Up</a>
+        </li>
+        <li class="nav-login">
+            <a class="nav-link" href="#">Log In</a>
+        </li>
+      </ul>
     </nav>
+  </div>
+
   <!--preferences-->
-  <div class="row" style="margin-top: 15px">
-  <form class="form-inline">
+  <form class="form-inline" style= "margin-top: 15px">
     <label for="location">Location:</label>
     <input type="location" class="form-control form-control-sm mb-2 mr-sm-2" id="location">
     <label for="checkin">Check In:</label>
@@ -54,35 +71,64 @@
     <input type="num" class="form-control form-control-sm mb-2 mr-sm-2" id="rooms">
     <button type="submit" class="btn btn-primary btn-sm mb-2">Submit</button>
   </form>
-  </div>
   <!--unfiltered optionn and images--> 
   <div class="container-fluid">
-  <div class="row" style="margin-top: 15px">
+  <div class="row">
       <div class="col-sm-4">
         <img src="poolisideparadise.jpg" alt="location1">
         <h4>Poolside Paradise</h4>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
       </div>
       <div class="col-sm-4">
         <img src="lavishliving.jpg" alt="location2">
         <h4>Lavish Living</h4>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
       </div>
       <div class="col-sm-4">
         <img src="amazonescape.jpg" alt="location3">
         <h4>Amazon Escape</h4>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
       </div>
   </div>
   <div class="row" style="margin-top: 15px">
     <div class="col-sm-4">
         <img src="bohemianhut.jpg" alt="location4">
         <h4>Bohemian Hut</h4>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
       </div>
       <div class="col-sm-4">
         <img src="basicstudio.jpg" alt="location5">
         <h4>Basic Studio</h4>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
       </div>
       <div class="col-sm-4">
         <img src="cozyafternoon.jpg" alt="location6">
         <h4>Cozy Afternoon</h4>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
       </div>
   </div> 
   </div>
